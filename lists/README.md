@@ -1,4 +1,4 @@
-Ordered and unordered lists are used to create many html interactions including:
+<h1>Ordered and unordered lists</h1>
 
 <h3>List Patterns</h3>
 <ul>
