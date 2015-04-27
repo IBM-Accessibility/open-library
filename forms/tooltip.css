@@ -1,0 +1,36 @@
+/* make the containers relative */
+fieldset > div {
+	position: relative;
+}
+
+/* hide tooltip */
+[role="tooltip"] {
+	display: none;
+	padding: 0.25em;
+	margin: 0;
+	color: #fff;
+	background: #000;
+	width: 100%;
+	z-index: 2;
+	width:200px;
+}
+
+/* show tooltip on focus */
+input:focus + [role="tooltip"] {
+	display: block;
+	position: absolute;
+	top: 100%;
+}
+
+legend {
+    font-size: 1.25rem;
+    background: none repeat scroll 0% 0% #fff;
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    padding: 0.25em;
+}
