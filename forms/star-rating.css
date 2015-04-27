@@ -26,7 +26,7 @@
 }
 
 .rating:not(:checked) > label:before {
-    content: '\2605';
+    content: '\2605'; 
 }
 
 .rating > input:checked ~ label {
