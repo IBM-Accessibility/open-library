@@ -1,5 +1,5 @@
 /* make the containers relative */
-fieldset > div {
+body {
 	position: relative;
 }
 
