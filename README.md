@@ -6,7 +6,7 @@ Great things start small and this is the humble beginning of a library of access
 <ul>
 <li><a href="https://github.com/IBM-Accessibility/open-library/tree/master/form-elements">Form Elements</a>
 	<ul>
-		<li><a href="https://github.com/IBM-Accessibility/open-library/tree/master/form-elements/star-rating-select.html">Star rating element made with a select box slider</a></li>
+		<li><a href="https://github.com/IBM-Accessibility/open-library/tree/master/form-elements/star-rating-select/star-rating-select.html">Star rating element made with a select box slider</a></li>
 	</ul>
 </li>
 <li><a href="https://github.com/IBM-Accessibility/open-library/tree/master/buttons">Buttons</a></li>
