@@ -1,5 +1,5 @@
 <h1>5 Star Rating System</h1>
-<h3 style="color:red">NOT APPROVED</h3>
+<h3 style="color:red;">DRAFT</h3>
 <p>
 Five star rating system based on an html select box with a type of slider.
 </p>
