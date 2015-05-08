@@ -51,12 +51,12 @@
 
 .rateit .rateit-hover
 {
-    background: url(star-64.gif) left -64px;
+    background: url(star-64.gif) left -128px;
 }
 
 .rateit .rateit-hover-rtl
 {
-    background-position: right -64px;
+    background-position: right -128px;
 }
 
 .rateit .rateit-selected
@@ -71,12 +71,12 @@
 
 .rateit .rateit-preset
 {
-    background: url(star-64.gif) left -48px;
+    background: url(star-64.gif) left -192px;
 }
 
 .rateit .rateit-preset-rtl
 {
-    background: url(star-64.gif) left -48px;
+    background: url(star-64.gif) left -192px;
 }
 
 .rateit button.rateit-reset
