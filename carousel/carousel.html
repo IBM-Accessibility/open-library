@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="us-en">
+<head>
+
+<title>ARIA carousel example</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="carousel.js"></script>
+
+<link rel="stylesheet" type="text/css" href="carousel.css"/>
+</head>
+<body>
+
+
+<h1> ARIA Example -- Carousel</h1>
+<div class="carousel" id="carousel" aria-live="polite">
+	<ul class="carousel-content">
+
+		<li aria-hidden="false" class="carousel-item"  id="item-1" >	            
+			<img src="one.jpg" alt="1" class= "carousel-image" />
+			<h2 class="carousel-heading">Item 1  - for your carousel</h2>
+			<div>
+				<p>Your carousel can talk about user needs and the products and services that may help them take the first step toward lifelong well-being.</p>
+			</div>                              
+		</li>     
+		<li aria-hidden="true" class="carousel-item hidden"  id="item-2" >              
+			<img src="two.jpg" alt="2" class="carousel-imageleft" />
+			<h2 class="carousel-heading">Item 2 <span class="block">for your carousel</span></h2>
+			<div>
+				<p>Your carousel can talk about offering and issues to help your market. It can also show news items. </p>
+			</div>                              
+		</li>  
+		 
+		<li aria-hidden="true" class="carousel-item hidden"  id="item-3" >              
+		    <img src="three.jpg" alt="3" class="carousel-image" />
+		    <h2 class="carousel-heading">Item 3 <span class="block">for your carousel</span></h2>
+		    <div>
+		    	<p>Your carousel can show pictures and text that help you brand your website ad company.</p>
+		    </div>                              
+		</li>  
+	</ul> 
+</div>
+
+<fieldset aria-label="carousel buttons" class="carousel-buttons" aria-controls="carousel">
+	<button value="pause" id="pause" aria-label="pause" class="carousel-button">||</button>    
+	<button value="go" id="go" class="carousel-button">play</button>
+    <button value="prev" aria-label="previous" id="prev" class="carousel-button"><<</button>
+    <button value="next" id="next" aria-label="next" class="carousel-button">>></button>
+</fieldset>
+
+</body>
+</html>

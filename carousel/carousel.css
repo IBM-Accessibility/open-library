@@ -1,0 +1,60 @@
+<style>
+button.carousel-button{
+	margin-left: 3px;
+	margin-right: 3px;
+
+	webkit-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	background-color:#EEE;
+	
+	border:1px solid #999;
+	
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-size:.9em;
+	font-weight:700;
+	padding:2px 6px;
+
+}
+.carousel-buttons{
+	width:auto;
+	vertical-align:bottom;
+	border:none;}
+
+.carousel {
+  margin: 10px 0;
+  width: 600px; 
+  height: 250px; 
+
+  
+}
+
+li.carousel-item {
+	position: absolute;
+	top: 60px;
+	left: 7px;
+	list-style:none;
+}
+img.carousel-image {
+z-index:-1;
+opacity:.5;
+float:right;
+width:200px;
+	}
+img.carousel-imageleft{
+	z-index:-1;
+opacity:.5;
+float:left;
+width:200px;
+	}
+
+li[aria-hidden='true'] {
+   display: none;
+}
+li[aria-hidden='false'] {
+   display:block ;
+   
+}
+
+.hidden {display:none;}
+</style>
