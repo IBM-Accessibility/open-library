@@ -1,0 +1,37 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" >
+<HEAD >
+<TITLE>ARIA tab panel example</TITLE>
+
+<link rel="stylesheet" type="text/css" href="tab-panel.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="tab-panel.js"></script>
+
+</HEAD>
+
+<BODY >
+<div class="examplestop">Return to <a href="http://accessibility.athena-ict.com/aria/aria-examples-index.shtml">ARIA Examples Index</a>, or the <a href="http://accessibility.athena-ict.com/aria/ARIA-accessibility-home.shtml">ARIA Accessibility Home Page</a> </div>
+
+
+<h1>ARIA Tab Panel Example</h1>
+<h2>About our product</h2>
+
+<ul class="tablist" role="tablist">
+  <li id="tab1" class="tab" aria-controls="panel1" aria-selected="false" role="tab" tabindex="0">Prices</li>
+  <li id="tab2" class="tab" aria-controls="panel2" role="tab" aria-selected="true" tabindex="0">Features </li>
+</ul>
+
+
+<div id="panel1" class="panel hidden" aria-labelledby="tab1" role="tabpanel" aria-hidden="true">
+  <h3 tabindex="0">Prices</h3>
+  List of prices   
+</div>
+
+<div id="panel2" class="panel" aria-labelledby="tab2" role="tabpanel" aria-hidden="false">
+  <h3 tabindex="0">Features</h3>
+  List of product features....
+</div>
+
+</BODY>
+</HTML>
