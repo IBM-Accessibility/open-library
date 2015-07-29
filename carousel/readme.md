@@ -1,3 +1,4 @@
+Submitted by Lisa Seeman.
 <h2>Notes</h2>
 The carousel is completely accessible. 
 <ul>
