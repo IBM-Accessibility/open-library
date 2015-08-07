@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ARIA Tooltip Example</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="tooltip2.js"></script>
+<link rel="stylesheet" type="text/css" href="tooltip2.css"/>
+</HEAD>
+
+<BODY>
+
+<div class="main" id="main1"  aria-labelledby="h11">
+  <h1 id="h11">ARIA Tooltip Example</h1>
+  <div>
+    <p>Tab to the text box, or put your mouse on it.</p>
+    <p>
+      <label for="topLoginUserName" class="humana-bold">Username</label>
+      <input autocomplete="off" class="input-text " id="UserName" name="UserName" type="text" value="" aria-describedby="tip1" />
+      <span id="tip1" class="tooltip" role="tooltip" >Also known as User ID</span>
+    </p>
+</div>
+
+</body>
+</html>
