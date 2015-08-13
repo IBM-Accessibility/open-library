@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="http://accessibility.athena-ict.com/accessibility.css"/><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ARIA information bubble Example</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="dialog-non-modal.js"></script>
+<link rel="stylesheet" type="text/css" href="dialog-non-modal.css"/>
+</head>
+
+<body>
+<div class="examplestop">Return to <a href="http://accessibility.athena-ict.com/aria/aria-examples-index.shtml">ARIA Examples Index</a>, or the <a href="http://accessibility.athena-ict.com/aria/ARIA-accessibility-home.shtml">ARIA Accessibility Home Page</a> </div>
+
+<div class="main" id="main1"  aria-labelledby="h11">
+<h1 id="h11">ARIA Non-Modal Dialog Example</h1>
+<div>
+  <p>Tab to the more info link and activate it.</p>
+  <p>
+  <label for="topLoginUserName" class="humana-bold">
+    Username 
+  </label>
+    <input autocomplete="off" class="input-text" id="UserName" name="UserName" type="text" value=""  /> 
+    <a class="help" href="#closebtn" name="bubble-associate1" id="bubble-associate1"  title="More info on username">
+<span class="link-tertiary">More info</span>
+<img alt="" src="https://www.humana.com/library/images/icons/call-tooltip-dark.png"/>
+</a>
+   
+										
+</div>
+<div class="bubble hidden" aria-labelledby="bubblehead" role="alertdialog" id="bubble1" aria-describedby="dialogtext"><div> 
+ <h3 id="bubblehead" tabindex="0">More info</h3> <a class="close" href="#" id="closebtn1" >Close</a>
+<div id="dialogtext">The Username is sometimes called User ID. </div></div></div>
+                       
+</body>
+</html>

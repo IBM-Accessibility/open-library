@@ -1,0 +1,57 @@
+.bubble {
+    font-family: arial;
+    font-size: 16px;
+    position: absolute;
+    width: 425px;
+    z-index: 9000;
+	opacity:1;
+	background:#DFF;
+	    border-radius: 15px 0 15px 15px;
+    box-shadow: 0 2px 9px -2px rgba(0, 0, 0, 0.6);
+}
+.bubble > div:first-child {
+   opacity:1;
+	background:#DFF;
+	border:2px solid #a1a1a1;
+
+	border-radius: 0 15px 15px 15px;
+    box-shadow: 0 2px 9px -2px rgba(0, 0, 0, 0.6);
+    outline: medium none;
+    padding: 25px 25px 25px;
+    position: absolute;
+	left: 100px;
+    width: 100%;
+    z-index: 9100;
+}
+
+.close {
+    background: url("close.png") no-repeat scroll right center transparent;
+    border-bottom: medium none;
+    line-height: 30px;
+    padding: 5px 33px 2px 0;
+    position: absolute;
+    right: 25px;
+    text-align: right;
+    text-decoration: underline;
+    top: 20px;
+}
+
+p a, .help {
+
+    line-height: 20px;
+    border-bottom: 1px dotted #046AB2;
+    color: #046AB2;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.bubble[aria-hidden='true'] {
+   display: none;
+}
+.bubble[aria-hidden='false'] {
+   display:block ;
+   
+}
+
+.hidden {display:none;}

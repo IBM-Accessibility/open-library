@@ -1,0 +1,53 @@
+<html lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ARIA date picker  example</title>
+
+<script type="text/javascript" src="http://www.oaa-accessibility.org/media/examples/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="date-picker.js"></script>
+<link rel="stylesheet" type="text/css" href="date-picker.css"/>
+
+</HEAD>
+
+<BODY >
+   <h1> Date Picker Example </h1>
+     
+    <div id="example_code">
+
+      <label id="date_label" for="date">Date</label>:
+      <input id="date" type="text"/>
+      <button id="bn_date">Select Day</button> 
+      <div id="dp1" class="datepicker" aria-hidden="true" >
+
+         <div id="month-wrap">
+            <input type="button" id="bn_prev" value="prev" aria-label="Go to previous month"/>
+            
+            <span id="month" role="heading" aria-live="assertive" aria-atomic="true" aria-label="Currently viewing month:" >February 2011</span>
+            <input type="button" id="bn_next" value="next" aria-label="Go to next month"/>
+         </div>
+
+         <table id="cal" role="grid" aria-activedescendant="errMsg" aria-label="use down arrow to navigate, and press enter to select a day" tabindex="0">
+            <thead>
+               <tr  id="weekdays">
+                  <th id="Sunday"><abbr title="Sunday">Sun</abbr></th>
+                  <th id="Monday"><abbr title="Monday">Mon</abbr></th>
+                  <th id="Tuesday"><abbr title="Tuesday">Tue</abbr></th>
+                  <th id="Wednesday"><abbr title="Wednesday">Wed</abbr></th>
+                  <th id="Thursday"><abbr title="Thursday">Thu</abbr></th>
+                  <th id="Friday"><abbr title="Friday">Fri</abbr></th>
+                  <th id="Saturday"><abbr title="Saturday">Sat</abbr></th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr ><td id="errMsg" colspan="7">Javascript must be enabled</td></tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+
+<p>
+Date picker is changed and adapted from <a href="http://www.oaa-accessibility.org/examplep/datepicker1/">oaa-accessibilityDate Picker</a>
+</p>
+
+</body>
+</html>
