@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ARIA Dialog Example</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="dialog-box.js"></script>
+<link rel="stylesheet" type="text/css" href="dialog-box.css"/>
+</head>
+
+<body>
+<div class="main" id="main1"  aria-labelledby="h11">
+<h1 id="h11">ARIA Dialog Example (Modal)</h1>
+<p>
+  <input type="button" value="press to open dialog" id="login" />
+</p>
+</div>
+
+<div id="mydialog" aria-hidden="true" role="dialog" class="dialogclass hidden" aria-labelledby="dialogheader">
+<div class="whitebox">
+<h1 id="dialogheader" tabindex="0" >Login</h1>
+<p>
+	Note that this form does nothing, it is just to show aria dialog at work. <br/>
+	There are no required elements.
+</p>
+<fieldset>
+	<label>name:<input type="text" name="name" id="name"/></label><br/>
+	<label>password: <input type="text" name="password" /></label><br/>
+</fieldset>
+<input type="button" value="Cancel" name ="cancel" id="cancel"/>
+<input type="button" value="OK" name = "ok" id="ok" aria-flowto="dialogheader"/>
+</div>
+
+</div>
+</body>
+</html>

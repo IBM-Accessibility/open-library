@@ -1,0 +1,26 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+
+<HEAD>
+<TITLE>form with aria</TITLE>
+<META NAME="Generator" CONTENT="TextPad 4.6">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="form-error.js"></script>
+
+<link rel="stylesheet" type="text/css" href="form-error.css"/>
+</HEAD>
+<BODY >
+<h1 id="searchhead" >ARIA Form Example</h1>
+<h3 role= "search" ><label for="text1">Search</label></h3>
+<form name="input1"  onsubmit="return validateForm()" >
+<input aria-describedby= "divinstruction"  aria-required="true" type="text" name="text1" id ="text1"/>
+<input type="button"   id="go" value="go"/>
+
+<div id="e1" role="alert" aria-hidden="false" aria-live="assertive" >
+  You need to enter a search term before pressing submit
+</div>
+</form>
+
+</BODY>
+</HTML>

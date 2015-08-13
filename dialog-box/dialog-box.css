@@ -1,0 +1,36 @@
+div.main {
+	z-index:-1;
+}
+
+div.whitebox{
+	background-color:white;
+border:medium;
+padding:15px;
+opacity:1 !important;
+text-align:left;
+width:30%;
+}
+
+div.dialogclass{
+z-index:0;
+width:100%;
+height:1000%;
+position:absolute;
+left:0px;
+top:0px;
+z-index:0;
+background-color: rgba(153,153,255,0.5);
+text-align:center;
+
+}
+
+div.dialogcenter{
+opacity:1;
+text-align:center;
+background-color:white;
+}
+
+div[aria-hidden='true'] {
+   display: none;
+}
+.hidden {display:none;}
